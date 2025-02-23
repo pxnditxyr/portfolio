@@ -1,0 +1,40 @@
+---
+import { SITE_INFO } from '@/contansts/site-info'
+import '@/styles/global.css'
+
+interface Props {
+  author?:      string
+  description?: string
+  image?:       string
+  title?:       string
+}
+
+const {
+  author = SITE_INFO.author,
+  description = SITE_INFO.description,
+  image = SITE_INFO.image,
+  title = SITE_INFO.title,
+} = Astro.props
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+    <title> { title } </title>
+
+    <meta name="description" content={ description } />
+    <meta name="author" content={ author } />
+
+    <meta property="og:title" content={ title } />
+    <meta property="og:description" content={ description } />
+    <meta property="og:image" content={ image } />
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
