@@ -1,0 +1,19 @@
+---
+import type { ILink } from '@/interfaces/link.interface'
+
+interface Props {
+  link: ILink
+}
+
+const { link } = Astro.props as Props
+---
+<a
+  href={ link.href }
+  class:list={[
+    'text-lg font-semibold',
+    'text-gray-600 hover:text-green-500',
+    'transition-colors',
+  ]}
+>
+  { link.name }
+</a>

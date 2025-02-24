@@ -1,0 +1,44 @@
+---
+import Header from '@/modules/shared/components/ui/Header.astro'
+import Nav from '@/modules/shared/components/ui/Nav.astro'
+import NavIcon from '@/modules/shared/components/ui/NavIcon.astro'
+
+const links = [
+  {
+    name: "Home",
+    href: "/",
+    //icon: "home",
+  },
+  {
+    name: "About",
+    href: "#about",
+    //icon: "info-circle",
+  },
+  {
+    name: "Projects",
+    href: "#projects",
+    //icon: "briefcase",
+  },
+  {
+    name: "Skills",
+    href: "#skills",
+    //icon: "tools",
+  },
+  {
+    name: "Contact",
+    href: "#contact",
+    //icon: "mail",
+  },
+]
+---
+
+<Header>
+  <div slot="left">
+    <NavIcon />
+  </div>
+  <div slot="right">
+    <Nav
+      links={ links }
+    />
+  </div>
+</Header>
