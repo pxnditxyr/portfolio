@@ -35,6 +35,8 @@ const {
     <meta property="og:image" content={ image } />
 	</head>
 	<body>
-		<slot />
+    <div class="w-full min-h-dvh grid grid-rows-[auto_1fr_auto]">
+      <slot />
+    </div>
 	</body>
 </html>
