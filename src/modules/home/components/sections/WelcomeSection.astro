@@ -1,11 +1,66 @@
 ---
+import { Icon } from 'astro-icon/components'
 import ColoredTitle from '@/modules/shared/components/ui/ColoredTitle.astro'
 import Title from '@/modules/shared/components/ui/Title.astro'
 
 ---
 
-<div class="w-full h-dvh flex flex-col items-center justify-center">
-  <Title>
-    Welcome I'm <ColoredTitle> 🐈 Pxndxs 🐼 </ColoredTitle>
-  </Title>
+<div class="w-full min-h-[calc(100dvh-72px)] flex flex-col items-center gap-10">
+  <div class="py-10">
+    <Title>
+      🐈 <ColoredTitle> Jose </ColoredTitle> Enrique
+      <ColoredTitle> Ricaldi </ColoredTitle> Juchani 🐼
+    </Title>
+
+
+
+  </div>
+  <p class="text-center text-lg">
+    I'm a software engineer and a web developer.
+  </p>
+
+  <a
+    href="https://github.com/pxnditxyr"
+    target="_blank"
+    class="text-blue-500 flex flex-col items-center gap-2 rounded-md bg-slate-100 p-4 transition-colors duration-200 hover:bg-slate-200"
+  >
+    <Icon
+      name="tabler:brand-github"
+      class="w-8 h-8 text-slate-800 hover:text-slate-700 transition-colors duration-200"
+    />
+    <span class="text-md font-bold">Github</span>
+  </a>
+
+  <h2 class="text-center text-lg animate-pulse flex items-center gap-2 text-slate-800 flex-col">
+    In coming soon...
+    <Icon
+      name="tabler:brand-astro"
+      class="w-8 h-8 text-slate-800 hover:text-slate-700 transition-colors duration-200"
+    />
+    <Icon
+      name="tabler:brand-nextjs"
+      class="w-8 h-8 text-slate-600 hover:text-slate-700 transition-colors duration-200"
+    />
+    <Icon
+      name="tabler:brand-react"
+      class="w-8 h-8 text-violet-500 hover:text-violet-700 transition-colors duration-200"
+    />
+
+    <Icon
+      name="tabler:brand-vue"
+      class="w-8 h-8 text-emerald-800 hover:text-emerald-700 transition-colors duration-200"
+    />
+    <Icon
+      name="tabler:brand-svelte"
+      class="w-8 h-8 text-amber-500 hover:text-amber-700 transition-colors duration-200"
+    />
+    <Icon
+      name="tabler:brand-tailwind"
+      class="w-8 h-8 text-sky-500 hover:text-sky-700 transition-colors duration-200"
+    />
+    <Icon
+      name="tabler:brand-angular"
+      class="w-8 h-8 text-red-500 hover:text-red-700 transition-colors duration-200"
+    />
+  </h2>
 </div>

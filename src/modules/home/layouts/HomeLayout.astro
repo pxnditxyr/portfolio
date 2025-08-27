@@ -1,6 +1,7 @@
 ---
 import Layout from '@/modules/shared/layouts/Layout.astro'
 import HomeHeader from '../components/ui/HomeHeader.astro'
+import { Icon } from 'astro-icon/components'
 
 ---
 
@@ -9,5 +10,17 @@ import HomeHeader from '../components/ui/HomeHeader.astro'
   <slot />
   <footer>
     <p>© { new Date().getFullYear() } Pxndxs</p>
+    <span>All rights reserved.</span>
+    <a
+      href="mailto:pxndxs.contact@gmail.com"
+      target="_blank"
+      class="text-blue-500 flex items-center gap-2 rounded-md p-4 transition-colors duration-200"
+    >
+      <Icon
+        name="tabler:brand-gmail"
+        class="min-w-6 min-h-6 text-red-500 hover:text-red-700 transition-colors duration-200"
+      />
+      <span>Contact</span>
+    </a>
   </footer>
 </Layout>
